@@ -1,0 +1,19 @@
+package exceptions;
+
+public class ExpDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Open File");
+		System.out.println("Read File");
+		int result = div(10,0);
+		System.out.println("Result: " + result);
+		System.out.println("Close file");
+
+	}
+	
+	public static int div(int a, int b) {
+		return a/b;
+	}
+
+}

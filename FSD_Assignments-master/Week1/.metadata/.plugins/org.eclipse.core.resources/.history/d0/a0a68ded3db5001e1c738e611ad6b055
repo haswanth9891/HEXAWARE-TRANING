@@ -1,0 +1,28 @@
+package mapDemo;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+public class MapsDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Map<String, Integer> m = new HashMap<String, Integer>();
+		m.put("Mahesh", 600);
+		m.put("Chiranjeevi",900); 
+		m.put("Balaiah",500); 
+		m.put("Venkatesh",600); 
+		m.put("Nagarjuna",800);
+		System.out.println(m);
+		Set<String> set = m.keySet();
+		Iterator<String> i = set.iterator();
+		while(i.hasNext()) {
+			String s = i.next();
+			System.out.println(s + " " + m.get(s));
+		}
+
+	}
+
+}

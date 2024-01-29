@@ -1,0 +1,23 @@
+package inheritance;
+
+public class Child extends Parent {
+	int cid = 99;
+	
+	public Child() {
+		super();
+		System.out.println("Child object created");
+	}
+	
+	public void m2() {
+		System.out.println("m2() is called from Child");
+	}
+	
+	public static void main(String[] args) {
+		
+		Child c = new Child();
+		
+		System.out.println(c.toString());
+		
+	}
+
+}
