@@ -1,0 +1,56 @@
+<div class="main">
+
+<div class="container">
+    <h2 style="font-weight: normal; text-align: center;">Registration Form</h2>
+    <form action="">
+        <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter full name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter email address">
+        </div>
+        <div style="display: flex; margin-block-end: 2%;">
+            <div style="flex: 1; margin-right: 2%;">
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter mobile number">
+            </div>
+            <div style="flex: 1; margin-left: 2%;">
+                <label for="birthdate">Birth Date</label>
+                <input type="date" id="birthdate" name="birthdate">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <div class="gender-container margin-block-end:2%">
+                <div style="display: flex; flex: 1;">
+                    <input style="margin-top: auto; margin-bottom: auto;" type="radio" id="male" name="gender" value="male">
+                    <label style="margin-top: auto; margin-bottom: auto;" for="male">Male</label>
+                </div>
+                <div style="display: flex; flex: 1;">
+                    <input style="margin-top: auto; margin-bottom: auto;" type="radio" id="female" name="gender" value="female">
+                    <label style="margin-top: auto; margin-bottom: auto;" for="female">Female</label>
+                </div>
+                <div style="display: flex; flex: 1.5;">
+                    <input style="margin-top: auto; margin-bottom: auto;" type="radio" id="prefer-not-to-say" name="gender" value="prefer-not-to-say">
+                    <label style="margin-top: auto; margin-bottom: auto;" for="prefer-not-to-say">Prefer not to say</label>
+                </div>
+                
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input style="margin-right: 2%;" type="text" id="address" name="address" placeholder="Enter address">
+        </div>
+        <div style="display: flex; margin-block-end: 2%;">
+            <input style="margin-right: 2%;" type="text" id="country" name="country" placeholder="Enter country">
+            <input style="margin-left: 2%;" type="text" id="postalcode" name="postalcode" placeholder="Enter postal code">
+        </div>
+        <div class="form-group-button" style="border-radius: 5%;">
+            <button style="width: 100%; padding: 2%; border: none;  color: white; background-color: rgb(142, 142, 233);" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+
+</div>

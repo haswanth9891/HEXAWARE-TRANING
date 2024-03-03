@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="search-container">
+    <h2>Cricket Team Coding Challenge</h2>
+    <h2>Players By TeamName</h2>
+    <input type="text" name="name" [(ngModel)]="teamName">
+    <button (click)="getPlayer(teamName)">Search</button>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Player Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let player of playerList">
+          <td>{{ player }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

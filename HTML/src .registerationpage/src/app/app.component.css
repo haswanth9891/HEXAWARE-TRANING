@@ -1,0 +1,96 @@
+  
+  
+  .login-form {
+    z-index: 15;
+    background-color: white;
+    border-radius: 2%;
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 0%; 
+    border-top-left-radius: 15%; 
+    border-top-right-radius: 15%;
+  }
+  .form-below-div{
+    display: flex; 
+    flex-direction: row;
+
+  }
+  .login-form h1 {
+    text-align: center;
+    background: linear-gradient(45deg, blue, rgb(243, 131, 243));
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+  }
+  
+  .input-field {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-field label {
+    flex: 0 0 100px;
+  }
+  
+  .input-field input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .checkbox-field {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .title{
+    border-bottom-left-radius: 0%; 
+    border-bottom-right-radius: 0%;
+  }
+  .form-main-child-div{
+    /* padding: 5%; */
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+  }
+  .checkbox-field input {
+    margin-right: 5px;
+    flex: 1;
+  }
+  
+  .forgot-password {
+    text-align: right;
+    margin-top: 10px;
+    flex: 1;
+  }
+  
+  .forgot-password a {
+    color: rgb(0, 21, 255);
+    text-decoration: none;
+  }
+  
+  .login-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(45deg, blue, rgb(243, 131, 243));
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .signup-link {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .signup-link a {
+    color: rgb(0, 21, 255);
+    text-decoration: none;
+  }

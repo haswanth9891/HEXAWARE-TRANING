@@ -1,0 +1,20 @@
+
+public class constructor {
+	
+	int id;
+
+	public constructor() {
+	 super();
+	 System.out.println("Default Constructor");
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		constructor c1 = new constructor();
+		
+		System.out.println("Default Constructor default Value: " + c1.id);
+
+	}
+
+}

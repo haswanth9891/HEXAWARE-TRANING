@@ -1,0 +1,33 @@
+<div>
+    <h2>Players By Name</h2>
+    <input type="text" name="name">
+    <button (click) = "getAllPlayers()">Search</button>
+  
+    <table>
+      <thead>
+        <tr>
+          <th>Player ID</th>
+          <th>Player Name</th>
+          <th>Jersey No</th>
+          <th>Role</th>
+          <th>Total Matches</th>
+          <th>Team Name</th>
+          <th>State</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let player of playerList">
+          <td>{{ player.playerId }}</td>
+          <td>{{ player.playerName }}</td>
+          <td>{{ player.jerseyNo }}</td>
+          <td>{{ player.role }}</td>
+          <td>{{ player.totallMatches }}</td>
+          <td>{{ player.teamName }}</td>
+          <td>{{ player.state }}</td>
+          <td>{{ player.description }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

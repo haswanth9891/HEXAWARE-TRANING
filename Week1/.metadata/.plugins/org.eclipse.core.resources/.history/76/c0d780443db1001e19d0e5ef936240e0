@@ -1,0 +1,17 @@
+package abstraction;
+
+public class BankImpl implements IBank{
+
+	@Override
+	public void deposit() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void withdrawl() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

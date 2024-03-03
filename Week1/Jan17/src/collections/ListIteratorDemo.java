@@ -1,0 +1,33 @@
+package collections;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.ListIterator;
+
+public class ListIteratorDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<String> l = new LinkedList<String>();
+		l.add("Bala"); 
+		l.add("Ram"); 
+		l.add("Chiru"); 
+		l.add("Nageshwar"); 
+		
+		ListIterator<String> i = l.listIterator();
+		
+		while (i.hasNext()) {
+			String s =  i.next();
+			if(s.equals("Chiru"))
+				i.remove();
+			if(s.equals("Nageshwar"))
+				i.add("Ramesh");
+			if(s.equals("Ram"))
+				i.set("Ram Charan");
+			
+		}
+		System.out.println(l);
+
+	}
+
+}

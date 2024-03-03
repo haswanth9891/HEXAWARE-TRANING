@@ -1,0 +1,36 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+
+        <!-- Database connection properties - Driver, URL, user, password -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hotelmanagment</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">Haswanth@123</property>
+
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+        <!-- Auto-create/update the database schema -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="hibernate.show_sql">true</property>
+
+        <!-- Mapping model/entity classes -->
+        <mapping class="com.yourpackage.entity.User" />
+        <mapping class="com.yourpackage.entity.Hotel" />
+        <mapping class="com.yourpackage.entity.Room" />
+        <mapping class="com.yourpackage.entity.Reservation" />
+        <mapping class="com.yourpackage.entity.Review" />
+        <mapping class="com.yourpackage.entity.HotelOwner" />
+        <mapping class="com.yourpackage.entity.Administrator" />
+        <mapping class="com.yourpackage.entity.Role" />
+        <mapping class="com.yourpackage.entity.UserRole" />
+
+    </session-factory>
+
+</hibernate-configuration>

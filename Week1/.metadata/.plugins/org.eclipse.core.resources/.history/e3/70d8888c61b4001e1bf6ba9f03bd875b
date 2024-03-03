@@ -1,0 +1,52 @@
+
+public class constructor {
+	
+	int id;
+	String name;
+
+	public constructor() {
+	 super();
+	 System.out.println("Default Constructor");
+	}
+	
+	public constructor(int i) {
+		
+		super();
+		id = i;
+		System.out.println("Parameterized Constructor with 1 parameter | Constructor Overloading");
+	}
+	
+	public constructor(int i, String n) {
+		id = i;
+		name = n;
+		System.out.println("Parameterized Constructor with 2 parameters | Constructor Overloading");
+		
+	}
+	
+	public constructor(constructor c) {
+		id = c.id;
+		name = c.name;
+		System.out.println("Copy Constructor");
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		constructor c1 = new constructor();
+		System.out.println("Default Constructor default value:\n " + "ID: " + c1.id + " Name: " + c1.name);
+		
+		constructor c2 = new constructor(2);
+		System.out.println("Parameterized Constructor with parameter value: " + c2.id);
+		
+        constructor c3 = new constructor(3, "Joy");
+		System.out.println("Parameterized and Overloaded Constructor with parameter values:\n " + "ID: " + c3.id + " Name: " + c3.name );
+		
+       constructor c4 = new constructor(c3);
+       System.out.println("Copy Constructor object c1 values :\n " + "ID: " + c4.id + " Name: " + c4.name + " which are same as c2 constructor values");
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,27 @@
+package exceptionhandling;
+
+public class UserDefinedException {
+	
+	public static void method(int age) throws AgeNotEnoughException{
+		if(age < 18) {
+			throw new AgeNotEnoughException("Not eligible to vote");
+		}
+		else {
+			System.out.println("Eligible to vote");
+		}
+
+	}
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+		  method(17);
+		}catch(AgeNotEnoughException a) {
+			System.out.println("Caught the exception");  
+            System.out.println(a);  
+		}
+
+	}
+
+}

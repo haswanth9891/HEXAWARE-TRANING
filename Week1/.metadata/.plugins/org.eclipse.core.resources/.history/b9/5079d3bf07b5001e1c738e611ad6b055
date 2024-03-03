@@ -1,0 +1,22 @@
+package set;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class SetDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Set<String> set = new HashSet<String>();
+		
+		set.add("Madhu");
+		set.add("Brahmi");
+		set.add("Kaloji");
+		set.add("Sree Sree");
+		
+		System.out.println(set);
+		
+
+	}
+
+}
